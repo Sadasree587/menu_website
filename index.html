@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Advanced Navbar</title>
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Mode Navbar</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="navbar1.css">
 </head>
 <body>
 
@@ -16,24 +16,28 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About</a></li>
     </ul>
 
-    <div class="search-container">
+    <div class="right-section">
         <i class="ri-search-line search-icon" id="openSearch"></i>
+
+        <label class="switch">
+            <input type="checkbox" id="toggleDark">
+            <span class="slider"></span>
+        </label>
 
         <div class="search-box" id="searchBox">
             <i class="ri-search-line"></i>
-            <input type="text" placeholder="Search here..." />
+            <input type="text" placeholder="Search here...">
             <i class="ri-close-line close" id="closeSearch"></i>
         </div>
     </div>
 
-    <!-- Mobile toggle -->
     <i class="ri-menu-line mobile-menu" id="mobileMenu"></i>
 </nav>
 
-<script src="script.js"></script>
+<script src="navbar1.js"></script>
 </body>
 </html>
+
